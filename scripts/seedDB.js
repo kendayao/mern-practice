@@ -3,7 +3,7 @@ const db=require('../models')
 require('dotenv').config()
 
 mongoose.connect(
-    "mongodb+srv://kendayao:"+process.env.DB_PASS+"@practice.zj8pj.mongodb.net/practice?retryWrites=true&w=majority"
+    "mongodb://localhost/mernpractice"
 )
 
 const faqSeed=[

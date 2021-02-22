@@ -22,7 +22,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-mongoose.connect("mongodb+srv://kendayao:"+process.env.DB_PASS+"@practice.zj8pj.mongodb.net/practice?retryWrites=true&w=majority", { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true })
+mongoose.connect("mongodb://localhost/mernpractice")
 // 'mongodb://localhost/mernpractice'
 // "mongodb+srv://kendayao:"+process.env.DB_PASS+"@practice.zj8pj.mongodb.net/practice?retryWrites=true&w=majority"
 app.listen(PORT, () => {
